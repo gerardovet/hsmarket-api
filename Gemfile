@@ -4,7 +4,8 @@ ruby "2.2.3"
 
 gem "versionist"
 gem "active_model_serializers", github: "rails-api/active_model_serializers", branch: "0-8-stable"
-        
+gem "rolify"
+gem "devise"
 
 gem "rails", "4.2.1"
 gem "delayed_job_active_record"
