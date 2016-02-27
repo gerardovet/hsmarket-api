@@ -11,6 +11,10 @@ RSpec.describe User, :type => :model do
     it { should respond_to(:auth_token) }
   end
 
+  context 'associations' do
+    it { should have_many :addresses }
+  end
+
   context 'on create' do
     let(:client) { FactoryGirl.create(:client) }
     it "should have client role" do
